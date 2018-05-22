@@ -1,0 +1,64 @@
+.menu_left_inner {
+    width: 20%;
+}
+
+.content_inner {
+    width: 80%;
+}
+
+.menu_title {
+
+}
+
+.menu_lef_list {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 20px;
+}
+.menu_lef_list > li {
+    margin: 5px 0;
+}
+
+.menu_lef_list > li > a{
+    color: black;
+    font-size: medium;
+}
+
+.menu_lef_list > li > a:hover {
+    text-decoration: none;
+    color: red;
+}
+.product_list {
+    padding: 40px 0;
+}
+
+.product_item {
+    margin: 0;
+    padding: 0;
+    height: 420px;
+    position: relative;
+}
+
+.product_inner {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right:5px;
+    padding: 0 10px;
+}
+
+.product_inner > img {
+    align-content: center;
+}
+
+.product_price {
+    position: absolute;
+    bottom: 10px;
+}
+
+.product_name {
+    position: absolute;
+    bottom: 35px;
+}
+

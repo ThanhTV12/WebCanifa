@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/common.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/header.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/footer.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/product_detail.css}">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div th:replace="customer/fragments/header :: header_info"></div>
+        <div class="content container-fluid">
+            <a href="">Trang chủ</a> / <span>đafdfad</span>
+            <div class="row detail-product">
+                <div class="picture_list column">
+                    <button id="list-product_previous"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></button>
+                    <div id="out-list_product">
+                        <ul id="img_product_list" class = "list_img-product">
+                            <li class="img-product_inner"><img src="https://canifa.s3.amazonaws.com/media/catalog/product/6/t/6th17w006-sa195-34.jpg" alt="" class="img-responsive img_product"></li>
+                            <li class="img-product_inner"><img src="https://canifa.s3.amazonaws.com/media/catalog/product/6/t/6th17w006-sa195-35.jpg" alt="" class="img-responsive img_product"></li>
+                            <li class="img-product_inner"><img src="https://canifa.s3.amazonaws.com/media/catalog/product/6/t/6th17w006-sa195-36.jpg" alt="" class="img-responsive img_product"></li>
+                            <li class="img-product_inner"><img src="https://canifa.s3.amazonaws.com/media/catalog/product/6/t/6th17w006-sa195-37.jpg" alt="" class="img-responsive img_product"></li>
+                            <li class="img-product_inner"><img src="https://canifa.s3.amazonaws.com/media/catalog/product/6/t/6th17w006-sa195-34.jpg" alt="" class="img-responsive img_product"></li>
+                            <li class="img-product_inner"><img src="https://canifa.s3.amazonaws.com/media/catalog/product/6/t/6th17w006-sa195-34.jpg" alt="" class="img-responsive img_product"></li>
+                            <li class="img-product_inner"><img src="https://canifa.s3.amazonaws.com/media/catalog/product/6/t/6th17w006-sa195-34.jpg" alt="" class="img-responsive img_product"></li>
+                        </ul>
+                    </div>
+                    <button id="list-product_next"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></button>
+                </div>
+                <div class="picture_focus column">
+                    <div class="picture-focus__inner"><img id="picture-focus_pic" class="img-responsive" src="https://canifa.s3.amazonaws.com/media/catalog/product/cache_generated/500x/6th17w006-sa195-33.jpg" alt=""></div>
+
+
+                </div>
+                <div class="detail_desc column">
+                    <div class="content_product">
+                        <h3 id="product-name">Áo modal nữ phối sợi</h3>
+                        <h5 id="product-id">SKU : 6TH17W006</h5>
+                        <h2 id="product-price">449.000</h2>
+                        <p>Miễn phí vận chuyển cho đơn hàng từ 499.000Đ</p>
+                        <p>Đổi trả sản phẩm nguyên giá, giảm giá trong vòng 15 ngày</p>
+                        <h4>MÀU SẮC</h4>
+                        <ul id="list-color" class="row">
+                            <li data-item-id="0" class="color-item"></li>
+                            <li data-item-id="1" class="color-item"></li>
+                        </ul>
+
+                        <h4>KÍCH THƯỚC</h4>
+                        <ul id="list-size" class="row">
+                            <li data-item-id="0" class="size-item">S</li>
+                            <li data-item-id="1" class="size-item">S</li>
+                            <li data-item-id="2" class="size-item">S</li>
+                        </ul>
+
+                        <h4>SỐ LƯỢNG</h4>
+                        <input id="product-number" size="5" type="text" value="1">
+
+                        <div id="add-to-cart"><a href="">THÊM VÀO GIỎ HÀNG</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div th:replace="customer/fragments/footer :: footer_info"></div>
+    </div>
+<script type="text/javascript" th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" th:src="@{/js/product_detail.js}"></script>
+</body>
+</html>
